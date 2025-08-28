@@ -64,9 +64,9 @@
         <div class="flex justify-between items-center py-4">
           <div class="flex items-center">
             <a href="/" class="text-2xl font-bold flex items-center gap-1" data-server-name data-split>
-              <span class="mr-2 inline-block bg-gradient-to-r from-[#0686e0]/50 to-[#033759]/40 bg-clip-text text-transparent animate-slideUp delay-300"
+              <span class="text-primary drop-shadow-[0_0_8px_rgba(6,134,224,0.8)]"
                       style="text-shadow:
-                        0 0 2px #0686e0;">
+                        0 0 1px #0686e0;">
                 Uniwax FiveM
               </span>
             </a>
@@ -74,8 +74,8 @@
           <div class="flex items-center hidden md:flex space-x-6">
             <a href="/" class="text-white hover:text-primary hover:drop-shadow-[0_0_8px_rgba(6,134,224,0.8)] transform transition-transform duration-300 hover:scale-105">Pravidla</a>
             <a href="/" class="text-white hover:text-primary hover:drop-shadow-[0_0_8px_rgba(6,134,224,0.8)] transform transition-transform duration-300 hover:scale-105">Obchod</a>
-            <a href="/" class="text-white hover:text-primary hover:drop-shadow-[0_0_8px_rgba(6,134,224,0.8)] transform transition-transform duration-300 hover:scale-105">Whitelist</a>
-            <a href="/team" class="text-white hover:text-primary hover:drop-shadow-[0_0_8px_rgba(6,134,224,0.8)] transform transition-transform duration-300 hover:scale-105">Tým</a>
+            <a href="/whitelist" class="text-white hover:text-primary hover:drop-shadow-[0_0_8px_rgba(6,134,224,0.8)] transform transition-transform duration-300 hover:scale-105">Whitelist</a>
+            <a href="/" class="text-white hover:text-primary hover:drop-shadow-[0_0_8px_rgba(6,134,224,0.8)] transform transition-transform duration-300 hover:scale-105">Tým</a>
             <a data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all duration-200 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 text-white border-primary/50 hover:bg-primary/10" href="/api/auth/discord?return=%2F">Přihlásit se</a>
           </div>
           <div class="md:hidden flex items-center">
@@ -85,7 +85,7 @@
           </div>
         </div>
       </div>
-</nav>
+    </nav>
 
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
 
@@ -146,7 +146,7 @@
           <div class="flex flex-col items-center justify-center space-y-8">
 
             <div class="flex flex-col items-center justify-center text-center py-20">
-                <div class="inline-flex items-center gap-2 rounded-full bg-white/5 border border-[#0686e0]/40 px-4 py-1 text-sm font-semibold shadow-lg backdrop-blur-md">
+                <div class="inline-flex items-center gap-2 rounded-full bg-white/5 border border-[#0686e0]/40 px-4 py-1 text-sm font-semibold shadow-lg backdrop-blur-md mb-6">
                     <svg width="12" height="11" class="animate-ping" fill="none">
                         <circle cx="5" cy="5" r="5" fill="#0686e0"></circle>
                     </svg>
@@ -154,16 +154,14 @@
                 </div>
 
                 <h1 class="relative z-10 mx-auto max-w-4xl text-center font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight">
-
-                    <span class="mr-2 inline-block text-slate-400 dark:text-slate-300 animate-slideUp">Vítej</span>
-                    <span class="mr-2 inline-block text-slate-400 dark:text-slate-300 animate-slideUp delay-100">na</span>
-                    <span
-                      class="mr-2 inline-block bg-gradient-to-r from-[#0686e0]/50 to-[#033759]/40 bg-clip-text text-transparent animate-slideUp delay-300"
-                      style="text-shadow:
-                        0 0 4px #0686e0;">
-                      Uniwax
-                    </span>
-                    <span class="mr-2 inline-block text-slate-400 dark:text-slate-300 animate-slideUp delay-400">FiveM</span>
+                  <span class="mr-2 inline-block text-slate-400 dark:text-slate-300 animate-slideUp">Vítej</span>
+                  <span class="mr-2 inline-block text-slate-400 dark:text-slate-300 animate-slideUp delay-100">na</span>
+                  <span
+                    class="text-primary hover:drop-shadow-[0_0_8px_rgba(6,134,224,0.8)]"
+                    style="text-shadow: 0 0 4px #0686e0;">
+                    Uniwax
+                  </span>
+                  <span class="mr-2 inline-block text-slate-400 dark:text-slate-300 animate-slideUp delay-400">FiveM</span>
                 </h1>
 
                 <p class="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-gray-400 mb-8 text-center max-w-2xl mt-4 px-4" data-aos="fade-up" data-aos-delay="200">
@@ -214,17 +212,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-dark/95 backdrop-blur-md md:hidden">
-      <div class="flex flex-col items-center justify-center h-full space-y-8">
-        <a href="/pravidla" class="text-white hover:text-primary transition duration-300 text-xl">Pravidla</a>
-        <a href="/404" class="text-white hover:text-primary transition duration-300 text-xl">Obchod</a>
-        <a href="/404" class="text-white hover:text-primary transition duration-300 text-xl">Whitelist</a>
-        <a href="/team" class="text-white hover:text-primary transition duration-300 text-xl">Tým</a>
-        <a data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all duration-200 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 px-6 py-3 text-white border-primary/50 hover:bg-primary/10" href="/api/auth/discord?return=%2F">Přihlásit se</a>
-      </div>
-    </div>
 
     <section class="py-8 relative bg-dark/80">
       <div class="max-w-6xl mx-auto px-4">
@@ -457,13 +444,77 @@
         <h2 class="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-[#033759] via-[#0686e0] to-[#033759] bg-clip-text text-transparent">SPOLUPRÁCE S DEVELOPERY</h2>
         <p class="text-base sm:text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed px-4">S podporou špičkových vývojářů doručujeme výjimečný herní zážitek.</p>
         <div class="w-32 h-1 bg-gradient-to-r from-[#033759] via-[#0686e0] to-[#033759] mx-auto mt-4 rounded-full"></div>
+        <style>
+        @keyframes scroll-x {
+          0% {
+            transform: translateX(400px);
+          }
+          50% {
+            transform: translateX(-400px);
+          }
+          100% {
+            transform: translateX(400px);
+          }
+        }
+
+        .animate-scroll-x {
+          animation: scroll-x 12s ease-in-out infinite;
+        }
+        </style>
+
+        <div id="scroll-container" class="w-full overflow-hidden justify-center mt-8 flex hide-scrollbar">
+          <div id="scroll-content" 
+              class="flex gap-12 sm:gap-16 items-center animate-scroll-x"
+              style="white-space: nowrap;">
+              
+            <a target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center flex-shrink-0 transition-transform 
+                      border border-[#0686e0]/50 rounded-xl shadow-md bg-white/5 backdrop-blur-sm"
+              style="width: 8rem; height: 6rem;">
+              <img alt="brofx" src="https://i.ibb.co/m59wD3Th/brofx-logo.webp"
+                  style="width: 10rem; height: 2.5rem; object-fit: contain;">
+            </a>
+
+            <a target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center flex-shrink-0 transition-transform 
+                      border border-[#0686e0]/50 rounded-xl shadow-md bg-white/5 backdrop-blur-sm"
+              style="width: 8rem; height: 6rem;">
+              <img alt="drc" src="https://i.ibb.co/bgzRJcPz/drc-scripts.webp"
+                  style="width: 10rem; height: 2.5rem; object-fit: contain;">
+            </a>
+
+            <a target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center flex-shrink-0 transition-transform 
+                      border border-[#0686e0]/50 rounded-xl shadow-md bg-white/5 backdrop-blur-sm"
+              style="width: 8rem; height: 6rem;">
+              <img alt="gabz" src="https://i.ibb.co/Hf6Smtdf/gabz-logo.webp"
+                  style="width: 10rem; height: 2.5rem; object-fit: contain;">
+            </a>
+
+            <a target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center flex-shrink-0 transition-transform 
+                      border border-[#0686e0]/50 rounded-xl shadow-md bg-white/5 backdrop-blur-sm"
+              style="width: 10rem; height: 6rem;">
+              <img alt="jg" src="https://i.ibb.co/Kz08qzKy/jg-scripts-logo.webp"
+                  style="width: 10rem; height: 2.5rem; object-fit: contain;">
+            </a>
+
+            <a target="_blank" rel="noopener noreferrer"
+              class="flex items-center justify-center flex-shrink-0 transition-transform 
+                      border border-[#0686e0]/50 rounded-xl shadow-md bg-white/5 backdrop-blur-sm"
+              style="width: 8rem; height: 6rem;">
+              <img alt="wasabi" src="https://i.ibb.co/d9tWCSW/wasabi-logo-1.webp"
+                  style="width: 10rem; height: 2.5rem; object-fit: contain;">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
     <section class="py-12 relative bg-dark/80 relative">
       <div class="max-w-4xl mx-auto px-4">
 
-        <div class="relative bg-[#050608]/5 backdrop-blur-xl p-8 sm:p-10 rounded-2xl border border-[#033759]/10 shadow-2xl transition-all duration-500 hover:border-[#033759]/70 overflow-hidden" data-aos="fade-up">
+        <div class="bg-gradient-to-br from-[#033759]/80 via-[#151a1c]/80 to-[#111b22]/90 border rounded-2xl backdrop-blur-md p-3 sm:p-4 lg:p-6 duration-500 border-[#033759]/70 overflow-hidden" data-aos="fade-up">
 
           <div class="absolute -top-24 -right-24 w-48 h-48 bg-[#0686e0]/10 rounded-full blur-3xl animate-pulse-slow"></div>
           <div class="absolute -bottom-24 -left-24 w-48 h-48 bg-[#0686e0]/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 1s;"></div>
